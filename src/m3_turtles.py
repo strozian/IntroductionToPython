@@ -56,7 +56,11 @@ window.delay(20)  # Bigger numbers mean slower animation.
 # Makes (constructs) a   SimpleTurtle   object.
 # ----------------------------------------------------------------------
 dave = rg.SimpleTurtle()
-
+carrie = rg.SimpleTurtle('turtle')
+carrie.left(40)
+carrie.forward(70)
+carrie.right(30)
+carrie.backward(40)
 # ----------------------------------------------------------------------
 # Ask the SimpleTurtle objects to do things:
 # ----------------------------------------------------------------------
@@ -111,7 +115,7 @@ matt.backward(80)
 ########################################################################
 stroz_4=rg.SimpleTurtle('turtle')
 stroz_4.left(50)
-stroz_4.backward(40)
+stroz_4.backward(80)
 ########################################################################
 #
 # Done: 5.
