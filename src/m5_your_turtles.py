@@ -27,4 +27,29 @@ Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
 #  fixing them at either this session OR at the NEXT session.
 #
 #  Don't forget to COMMIT your work by using  VCS ~ Commit and Push.
-########################################################################
+import rosegraphics as rg
+window = rg.TurtleWindow
+
+
+boy = rg.SimpleTurtle('turtle')
+bill = rg.SimpleTurtle('turtle')
+bill.speed = 20
+boy.speed = 10
+boy.pen = rg.Pen('midnight blue', 3)
+bill.pen = rg.Pen('midnight blue', 3)
+size = 288
+
+for d in range(10):
+    boy.draw_square(size)
+    bill.draw_square(size)
+    bill.pen_up
+    boy. pen_up
+    bill.right(45)
+    bill.forward(12)
+    bill.left(45)
+    boy.left(45)
+    boy.forward(50)
+    boy.right(45)
+    bill.pen_down
+    boy.pen_down
+    size = size-10
